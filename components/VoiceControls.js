@@ -16,7 +16,7 @@ export default function VoiceControls() {
           cursor: 'pointer'
         }}
       >
-        Mic {micOn ? 'ON' : 'OFF'}
+        Mic {micOn ? 'ON🎙️' : 'OFF'}
       </button>
     </div>
   )
