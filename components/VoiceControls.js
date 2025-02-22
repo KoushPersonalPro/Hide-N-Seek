@@ -5,7 +5,7 @@ export default function VoiceControls() {
   const [micOn, setMicOn] = useState(false)
 
   return (
-    <div style={{ position: 'absolute', top: 10, left: 10, zIndex: 10 }}>
+    <div style={{ position: 'absolute', top: 25, left: 10, zIndex: 10 }}>
       <button 
         onClick={() => setMicOn(!micOn)}
         style={{

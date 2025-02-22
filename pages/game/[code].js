@@ -149,14 +149,14 @@ export default function Game() {
       <VoiceControls />
       <button 
         onClick={() => router.push('/')} 
-        style={{ position: 'absolute', top: 10, right: 10, padding: '10px 20px' }}
+        style={{ position: 'absolute', top: 20, right: 10, padding: '10px 20px' }}
       >
         Exit
       </button>
       {timeLeft !== null && (
         <div style={{ 
           position: 'absolute', 
-          top: 10, 
+          top: 25, 
           left: '50%', 
           transform: 'translateX(-50%)', 
           color: 'white',
