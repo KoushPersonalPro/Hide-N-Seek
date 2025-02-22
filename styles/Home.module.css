@@ -1,0 +1,35 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.startButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.startButton:hover {
+  background-color: #005bb5;
+}

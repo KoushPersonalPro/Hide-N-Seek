@@ -1,0 +1,188 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><meta name="next-head-count" content="2"/><link rel="preload" href="/_next/static/css/2e95e2ea35d78438.css" as="style" crossorigin=""/><link rel="stylesheet" href="/_next/static/css/2e95e2ea35d78438.css" crossorigin="" data-n-g=""/><noscript data-n-css=""></noscript><script defer="" crossorigin="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-d645d29950e07418.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/framework-e078c2239b45ef29.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/main-bdfcfc23ca93d033.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/_app-87552b6dee8d4ac4.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/574-b9c59d763960c0df.js" defer="" crossorigin=""></script><script src="/_next/static/chunks/pages/index-583b50ed0959798d.js" defer="" crossorigin=""></script><script src="/_next/static/C-9osgwnuPmQE-WFHp81V/_buildManifest.js" defer="" crossorigin=""></script><script src="/_next/static/C-9osgwnuPmQE-WFHp81V/_ssgManifest.js" defer="" crossorigin=""></script></head><body><div id="__next"><div class="container"><div class="card-wrapper"><div class="card"><div class="header"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gamepad game-icon"><line x1="6" x2="10" y1="12" y2="12"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="15" x2="15.01" y1="13" y2="13"></line><line x1="18" x2="18.01" y1="11" y2="11"></line><rect width="20" height="12" x="2" y="6" rx="2"></rect></svg><h1>Hide &amp; Seek</h1></div><div class="form"><div class="input-wrapper"><div class="input-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div><input type="text" placeholder="Enter username" value=""/></div><button class="button create-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"></path><path d="M20 3v4"></path><path d="M22 5h-4"></path><path d="M4 17v2"></path><path d="M5 18H3"></path></svg><span>Create New Game</span></button><div class="divider"><span>or</span></div><div class="input-wrapper"><input type="text" placeholder="Enter game code" maxLength="6" class="code-input" value=""/></div><button class="button join-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-arrow-right"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path><path d="m12 16 4-4-4-4"></path></svg><span>Join Game</span></button></div></div><p class="footer">Join the fun! Create a new game or enter a code to join an existing one.</p></div><style>
+        .container {
+          min-height: 100vh;
+          background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .card-wrapper {
+          width: 100%;
+          max-width: 28rem;
+        }
+
+        .card {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(12px);
+          border-radius: 1.5rem;
+          padding: 2rem;
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.75rem;
+          margin-bottom: 2rem;
+        }
+
+        .header h1 {
+          font-size: 2.5rem;
+          font-weight: bold;
+          color: white;
+          margin: 0;
+        }
+
+        .game-icon {
+          width: 2.5rem;
+          height: 2.5rem;
+          color: white;
+        }
+
+        .form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+        }
+
+        .input-wrapper {
+          position: relative;
+        }
+
+        .input-icon {
+          position: absolute;
+          left: 0.75rem;
+          top: 50%;
+          transform: translateY(-50%);
+          color: rgba(255, 255, 255, 0.6);
+          display: flex;
+          align-items: center;
+          pointer-events: none;
+        }
+
+        .input-icon svg {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+
+        input {
+          width: 100%;
+          padding: 0.75rem 1rem;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 0.75rem;
+          color: white;
+          font-size: 1rem;
+          transition: all 0.2s ease;
+        }
+
+        input::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus {
+          outline: none;
+          border-color: rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.25);
+        }
+
+        input[type=&quot;text&quot;] {
+          padding-left: 2.75rem;
+        }
+
+        .code-input {
+          text-align: center;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+        }
+
+        .button {
+          width: 100%;
+          padding: 0.75rem 1.5rem;
+          border-radius: 0.75rem;
+          border: none;
+          font-weight: 600;
+          color: white;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .button svg {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+
+        .create-button {
+          background: linear-gradient(to right, #22d3ee, #3b82f6);
+        }
+
+        .create-button:hover {
+          background: linear-gradient(to right, #06b6d4, #2563eb);
+          transform: scale(1.05);
+        }
+
+        .join-button {
+          background: linear-gradient(to right, #f43f5e, #e11d48);
+        }
+
+        .join-button:hover {
+          background: linear-gradient(to right, #e11d48, #be123c);
+          transform: scale(1.05);
+        }
+
+        .button:active {
+          transform: scale(0.95);
+        }
+
+        .divider {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 0.875rem;
+        }
+
+        .divider::before,
+        .divider::after {
+          content: &#x27;&#x27;;
+          flex: 1;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .divider span {
+          margin: 0 1rem;
+        }
+
+        .footer {
+          text-align: center;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 0.875rem;
+          margin-top: 1.5rem;
+        }
+
+        @media (max-width: 640px) {
+          .card {
+            padding: 1.5rem;
+          }
+
+          .header h1 {
+            font-size: 2rem;
+          }
+
+          .game-icon {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+      </style></div></div><script id="__NEXT_DATA__" type="application/json" crossorigin="">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"C-9osgwnuPmQE-WFHp81V","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
